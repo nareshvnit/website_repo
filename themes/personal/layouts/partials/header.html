@@ -1,7 +1,7 @@
 <header>
     <nav class="nav-container">
         <div class="nav-brand">
-            <a href="/">{{ .Site.Title }}</a>
+            <a href="{{ relURL "/" }}">{{ .Site.Title }}</a>
         </div>
         <ul class="nav-menu">
             {{ range .Site.Menus.main }}
