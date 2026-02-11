@@ -1,8 +1,13 @@
 {{ define "main" }}
 <div class="home-container">
     <section class="hero">
-        <h1>{{ .Site.Params.author }}</h1>
-        <p class="tagline">{{ .Site.Params.description }}</p>
+        <div class="hero-content">
+            <img src="{{ "images/profile.jpg" | relURL }}" alt="{{ .Site.Params.author }}" class="hero-image">
+            <div class="hero-text">
+                <h1>{{ .Site.Params.author }}</h1>
+                <p class="tagline">{{ .Site.Params.description }}</p>
+            </div>
+        </div>
     </section>
 
     <section class="intro">

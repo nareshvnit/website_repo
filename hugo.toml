@@ -1,11 +1,11 @@
 baseURL = 'https://nareshvnit.github.io/website_repo/'
 languageCode = 'en-us'
-title = 'Your Name - Personal Website'
+title = 'Naresh Kumar - Personal Website'
 theme = 'personal'
 
 [params]
   description = 'Personal website and technical blog'
-  author = 'Your Name'
+  author = 'Naresh Kumar'
   email = 'your.email@example.com'
   github = 'yourusername'
   linkedin = 'yourprofile'
