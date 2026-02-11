@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="single-page">
+    <header>
+        <h1>{{ .Title }}</h1>
+        {{ if eq .Section "posts" }}
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+        {{ end }}
+    </header>
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}
