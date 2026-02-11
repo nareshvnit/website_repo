@@ -1,6 +1,6 @@
 baseURL = 'https://nareshvnit.github.io/website_repo/'
 languageCode = 'en-us'
-title = 'Naresh Kumar - Personal Website'
+title = 'Naresh Kumar - Website'
 theme = 'personal'
 
 [params]
