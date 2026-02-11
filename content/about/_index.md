@@ -4,7 +4,7 @@ title: "About Me"
 
 ## Who I Am
 
-I'm a passionate software developer with a love for clean code and elegant solutions. With experience across multiple technologies and domains, I enjoy tackling challenging problems and continuous learning.
+I'm a passionate data engineer with a love for clean code and elegant solutions. With experience across multiple technologies and domains, I enjoy tackling challenging problems and continuous learning.
 
 ## What I Do
 
