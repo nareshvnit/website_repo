@@ -1,5 +1,3 @@
-local_backend: false
-base_url: /website_repo
 backend:
   name: github
   repo: nareshvnit/website_repo

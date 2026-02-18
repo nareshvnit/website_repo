@@ -5,7 +5,6 @@
   <meta name="robots" content="noindex" />
   <title>Content Manager</title>
 
-  <!-- stop auto initialization -->
   <script>
     window.CMS_MANUAL_INIT = true;
   </script>
@@ -16,34 +15,7 @@
 
 <script>
   CMS.init({
-    config: {
-      backend: {
-        name: "github",
-        repo: "nareshvnit/website_repo",
-        branch: "main",
-        auth_type: "implicit",
-        app_id: "Ov23lirVgQLHFhEyqREV"
-      },
-      media_folder: "static/images",
-      public_folder: "/website_repo/images",
-      site_url: "https://nareshvnit.github.io/website_repo",
-      collections: [
-        {
-          name: "posts",
-          label: "Blog Posts",
-          folder: "content/posts",
-          create: true,
-          format: "frontmatter",
-          slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-          fields: [
-            {label: "Title", name: "title", widget: "string"},
-            {label: "Publish Date", name: "date", widget: "datetime"},
-            {label: "Draft", name: "draft", widget: "boolean", default: false},
-            {label: "Body", name: "body", widget: "markdown"}
-          ]
-        }
-      ]
-    }
+    config: "/website_repo/admin/config.yml"
   });
 </script>
 
