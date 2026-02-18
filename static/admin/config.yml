@@ -5,8 +5,8 @@ backend:
   auth_type: implicit
   app_id: 'Ov23lirVgQLHFhEyqREV'
 
-site_url: https://nareshvnit.github.io
-display_url: https://nareshvnit.github.io
+site_url: https://nareshvnit.github.io/website_repo
+display_url: https://nareshvnit.github.io/website_repo
 
 publish_mode: editorial_workflow
 
