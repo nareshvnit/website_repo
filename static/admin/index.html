@@ -1,22 +1,51 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex" />
-    <title>Content Manager</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <title>Content Manager</title>
 
-    <!-- IMPORTANT PART -->
-    <script>
-      window.CMS_MANUAL_INIT = true;
-    </script>
+  <!-- stop auto initialization -->
+  <script>
+    window.CMS_MANUAL_INIT = true;
+  </script>
 
-    <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
-  </head>
-  <body>
-    <script>
-      CMS.init({
-        config: "/website_repo/admin/config.yml"
-      });
-    </script>
-  </body>
+  <script src="https://unpkg.com/decap-cms@3.0.0/dist/decap-cms.js"></script>
+</head>
+<body>
+
+<script>
+  CMS.init({
+    config: {
+      backend: {
+        name: "github",
+        repo: "nareshvnit/website_repo",
+        branch: "main",
+        auth_type: "implicit",
+        app_id: "Ov23lirVgQLHFhEyqREV"
+      },
+      media_folder: "static/images",
+      public_folder: "/website_repo/images",
+      site_url: "https://nareshvnit.github.io/website_repo",
+      collections: [
+        {
+          name: "posts",
+          label: "Blog Posts",
+          folder: "content/posts",
+          create: true,
+          format: "frontmatter",
+          slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+          fields: [
+            {label: "Title", name: "title", widget: "string"},
+            {label: "Publish Date", name: "date", widget: "datetime"},
+            {label: "Draft", name: "draft", widget: "boolean", default: false},
+            {label: "Body", name: "body", widget: "markdown"}
+          ]
+        }
+      ]
+    }
+  });
+</script>
+
+</body>
 </html>
