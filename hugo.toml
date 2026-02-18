@@ -1,4 +1,6 @@
 baseURL = 'https://nareshvnit.github.io/website_repo/'
+relativeURLs = true
+canonifyURLs = true
 languageCode = 'en-us'
 title = 'Naresh Kumar - Website'
 theme = 'personal'
@@ -6,8 +8,8 @@ theme = 'personal'
 [params]
   description = 'Personal website and technical blog'
   author = 'Naresh Kumar'
-  email = 'your.email@example.com'
-  github = 'yourusername'
+  email = 'naresh.nitngp@gmail.com'
+  github = 'nareshvnit'
   linkedin = 'yourprofile'
   
 [markup]
