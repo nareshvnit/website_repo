@@ -5,7 +5,6 @@ backend:
   auth_type: implicit
   app_id: Ov23lirVgQLHFhEyqREV
   base_url: https://github.com
-  base_url: https://api.github.com
 
 site_url: https://nareshvnit.github.io/website_repo
 display_url: https://nareshvnit.github.io/website_repo
